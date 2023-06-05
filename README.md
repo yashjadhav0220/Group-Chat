@@ -7,3 +7,9 @@ The ClientHandler class handles the individual clients. It maintains a list of a
 The client-side is represented by the Client class. It establishes a connection to the server and allows the user to send messages to the server. It also listens for incoming messages from the server and displays them on the client's console.
 
 Overall, the project provides a basic foundation for a multi-client chat application. It demonstrates socket programming, multi-threading, and message broadcasting between clients connected to a central server.
+
+ The server and clients can communicate with each other using local IP addresses or hostnames, without the need for an internet connection. The server can be hosted on a local machine, and the clients can connect to the server using the local IP address and the same port number.
+
+However, if the clients are running on different networks (e.g., different Wi-Fi networks or over the internet), an internet connection would be required for the clients to establish a connection to the server and communicate with each other.
+
+In summary, the provided Java code can work without an internet connection in a local network setup, but an internet connection is required if the clients are running on different networks.
